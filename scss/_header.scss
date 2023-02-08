@@ -1,0 +1,71 @@
+header {
+	width: 100%;
+	height: 13vh;
+	padding: 0 7vw;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 3;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: center;
+	overflow: hidden;
+
+	h1 {
+		display: flex;
+		align-items: center;
+		a {
+			font: bold 20px/1 "arial";
+			color: #333;
+		}
+	}
+
+	nav {
+		display: flex;
+		gap: 100px;
+
+		#gnb {
+			display: flex;
+			gap: 40px;
+
+			a {
+				font: 12px/1 "arial";
+				color: #555;
+			}
+		}
+
+		.sns {
+			display: flex;
+			gap: 20px;
+			a {
+				font-size: 12px;
+				color: #777;
+			}
+		}
+	}
+
+	.fa-bars {
+		font-size: 20px;
+		color: #333;
+		position: absolute;
+		right: -10vw;
+		top: 50%;
+		transform: translateY(-50%);
+		transition: 0.5s;
+		opacity: 0;
+		cursor: pointer;
+	}
+}
+
+@media screen and (max-width: $mobile) {
+	header {
+		nav {
+			display: none;
+		}
+		.fa-bars {
+			opacity: 1;
+			right: 7vw;
+		}
+	}
+}

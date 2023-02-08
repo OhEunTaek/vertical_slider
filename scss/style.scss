@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+
+$mobile: 849px;
+
+@import "reset";
+@import "header";
+
+figure {
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	padding: 13vh 7vw 8vh;
+	overflow: hidden;
+
+	@import "btns";
+	@import "panel";
+}
